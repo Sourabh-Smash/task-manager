@@ -30,7 +30,7 @@ public class UserEntity {
     // Getters and Setters
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+//    @Column(name = "id")
     private Long id;
 
     @NotBlank(message = "Username is required")
