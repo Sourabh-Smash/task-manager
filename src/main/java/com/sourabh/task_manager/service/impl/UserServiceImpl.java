@@ -243,7 +243,7 @@ public class UserServiceImpl implements UserService {
         UserEntity user = userOptional.get();
 
         // Check if user is active
-        if (!user.getIsActive()) {
+        if (Boolean.FALSE.equals(user.getIsActive())) {
             return false;
         }
 
